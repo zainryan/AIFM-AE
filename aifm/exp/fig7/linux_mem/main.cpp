@@ -31,7 +31,7 @@ std::unique_ptr<FarMemManager> manager;
 namespace far_memory {
 class FarMemTest {
 private:
-  constexpr static uint64_t kCacheSize = 10240 * Region::kSize;
+  constexpr static uint64_t kCacheSize = 16384 * Region::kSize;
   constexpr static uint64_t kFarMemSize = (1ULL << 30);
   constexpr static uint32_t kNumGCThreads = 100;
   constexpr static uint32_t kKeyLen = 12;
