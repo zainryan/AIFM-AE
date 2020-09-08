@@ -64,7 +64,6 @@ echo Y | sudo apt-get install libnuma-dev libmnl-dev libnl-3-dev libnl-route-3-d
 echo Y | sudo apt install software-properties-common
 echo Y | sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 echo Y | sudo apt install gcc-9 g++-9
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 90 --slave /usr/bin/g++ g++ /usr/bin/g++-9 --slave /usr/bin/gcov gcov /usr/bin/gcov-9
 ```
 
 ### Build Shenango and AIFM (on all nodes)
