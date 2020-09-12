@@ -20,13 +20,13 @@ chmod uga+rwx /dev/pcicfg
 
 # reserve huge pages
 echo 8192 > /sys/devices/system/node/node0/hugepages/hugepages-2048kB/nr_hugepages
-for n in /sys/devices/system/node/node[1-9]; do
-	echo 0 > $n/hugepages/hugepages-2048kB/nr_hugepages
-done
 
 # revoke any CAT settings
 modprobe msr
-pqos -R l3cdp-any
+if command -v pqos &> /dev/null
+then
+  pqos -R l3cdp-any
+fi
 
 # enable RDPMC instruction from userspace
 echo 2 > /sys/devices/cpu/rdpmc
