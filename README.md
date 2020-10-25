@@ -2,6 +2,8 @@
 ![Status](https://img.shields.io/badge/Version-Experimental-green.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+This repo is __out of date__, please visit [here](https://github.com/AIFM-sys/AIFM) for the latest code.
+
 AIFM stands for Application-Integrated Far Memory. It provides a simple, general, and high-performance mechanism for users to adapt ordinary memory-intensive applications to far memory. Different from existing paging-based systems, AIFM exposes far memory as far-memory pointers and containers in the language level. AIFM's API allows its runtime to accurately capture application semantics, therefore making intelligent decisions on data placement and movement.
 
 Currently, AIFM supports C++ and TCP-enabled remote server memory.
