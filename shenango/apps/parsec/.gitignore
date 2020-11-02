@@ -1,7 +1,0 @@
-*.log
-**/obj/
-**/inst/
-**/run/
-*.swp
-
-inputs/
